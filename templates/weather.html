@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>
+		Weather Forecast Program
+	</title>
+	
+</head>
+
+<body>
+	<section class="section">
+		<div class="container-fluid" align="center">
+			<h1 class="title">
+				<font size=15>Weather forecast program</font>
+			</h1>
+		</div>
+	</section>
+	<br>
+	<br>
+
+	<section class="section">
+		<div align="center">
+			<div class="columns is-offset-4 is 4">
+				<form method="post" action="/">
+					<div class="field has-addons">
+						<div class="control is-expanded">
+							<input name="city" class="input" type="text" placeholder="Input City" style="width: 300px; padding: 15px; border-color: grey; border-radius: 4px;">
+						</div>
+						<br>
+						<div class="=control" >
+{#							<button class="button is-info" style="font-size: 15px; border-radius: 2px;color: black;padding: 6px 24px; display: inline-block;background-color: grey; font-family: sans-serif; font-weight: 200pt">#}
+{#								Go#}
+{#							</button>#}
+                            <input type="submit" value="Go!">
+						</div>
+					</div>
+				</form>	
+			</div>
+		</div>
+	</section>
+
+	<br>
+	<br>
+	<br>
+		<div class="box" style="border-color: grey" align="center" style="display: inline-block;">
+				<div class="content">								
+					<span class="title" style="clear: right; font-size: 30px; font-family: sans-serif;">{{ currentweather.city }}</span>
+					<br>
+
+					<span class="subtitle">{{currentweather.temperature}}</span>
+					<br>
+					{{ currentweather.description }}
+				</div>	
+		</div>
+
+</body>
